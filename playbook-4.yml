@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: true
+  gather_facts: false
+  tasks:
+    - name: Check if docker exists
+      ansible.builtin.command: docker --version
+      register: output
+    - name: Display the output if docker exists
+      ansible.builtin.debug: 
+        var: output
