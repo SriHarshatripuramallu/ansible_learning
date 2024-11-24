@@ -379,3 +379,100 @@ ls
 clear
 ls
 ansible -i inventory.ini -m shell -a "docker -v" all
+ls
+clear
+vim playbook-3.yml
+cat playbook.yml 
+vim playbook-3.yml
+cat playbook-3.yml 
+clear
+ansible-playbook -i inventory.ini playbook-3.yml 
+clear
+ls
+clear
+ls
+clear
+ls
+vim playbook-4.yml
+ansible-playbook -i inventory.ini playbook-4.yml 
+vim playbook-4.yml 
+ansible-playbook -i inventory.ini playbook-4.yml 
+vim playbook-4.yml 
+ansible-playbook -i inventory.ini playbook-4.yml 
+vim playbook-4.yml 
+ansible-playbook -i inventory.ini playbook-4.yml 
+clear
+ls
+clear
+git -v
+ls
+git init
+git status
+git add .
+git config --global user.name "Sri Harsha"
+git config --global user.email "sriharshatripuramallu@outlook.com"
+git commit -m "Adding the changes to playbooks"
+git remote add origin https://github.com/SriHarshatripuramallu/ansible_learning
+git origin -v
+git origin
+git origin --help
+git --help
+git remote -v
+git push origin main
+git branch -a
+git push origin master
+git push origin main
+git push origin master
+clear
+ls
+clear
+vim playbook-5.yml
+ansible-playbook -i inventory.ini playbook-5.yml
+clear
+ls
+git add .
+git commit -m "Added playbook-5.yml"
+git push
+git push --set-upstream origin master
+git pull
+clear
+ls
+clear
+ls
+clear
+openssl
+openssl rand --help
+openssl rand -base64 --help
+openssl rand -base64 2048 > vault.pass
+ls
+cat vault.pass 
+clear
+ls
+clear
+ansible-vault create credentials.yml --vault-password-file vault.pass
+cat credentials.yml 
+clear
+ansible-vault view credentials.yml --vault-password-file vault.pass
+ansible-vault decrypt credentials.yml --vault-password-file vault.pass 
+cat credentials.yml 
+ls
+clear
+ansible-vault encrypt credentials.yml --vault-password-file vault.pass
+cat credentials.yml 
+vim credentials.yml 
+ansible-vault view credentials.yml --vault-password-file vault.pass
+clear
+git add .
+git commit -m "Learnt managing of ansible vault"
+git push remote origin master
+git push origin master
+clear
+ls
+git config --global credential.helper 'cache --timeout=9000
+
+
+'
+clear
+ls
+clear
+git status
